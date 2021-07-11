@@ -22,6 +22,7 @@ body {
 .balls {
     position: fixed;
     z-index: 0;
+    display: none;
 }
 
 .ball-1 {
@@ -52,14 +53,30 @@ body {
 .emphasis {
     font-weight: 600;
     display: inline-block;
-    background: linear-gradient(90deg, royalblue, #6a26cd,  hotpink);
+    background: linear-gradient(90deg, royalblue, #6a26cd,  rgb(255, 8, 160));
     -webkit-background-clip: text;
     color: transparent;
     transition: all 2s ease;
 }
 
 .emphasis:hover {
-    background-position: 20.5rem;
+    background-position: 21rem;
+    
+}
+
+.pinkblue {
+    display: inline-block;
+    background: linear-gradient(90deg, rgb(255, 8, 160), #6a26cd,  royalblue);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.pink {
+    color: rgb(255, 8, 160);
+}
+
+.blue {
+    color: royalblue;
 }
 
 #title {
@@ -87,16 +104,19 @@ a {
 }
 
 .button {
-    background-color: #2C2F38;
+    /* background-color: #2C2F38; */
+    background-color: rgb(255, 8, 160);
     padding: 0.8rem 1.5rem;
     font-size: 1.2rem;
     border-radius: 5px;
     color: #ddd;
     margin-right: 20px;
+    /* transition: all .5s ease; */
 }
 
 .button:hover {
-    background-color: #444;
+    /* background-color: #444; */
+    background-color: royalblue;
 }
 
 #report {
